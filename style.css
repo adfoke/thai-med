@@ -172,26 +172,102 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
-/* 医院列表 */
-.hospital-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+/* 医院列表表格 */
+.section-intro {
+    text-align: center;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #555;
 }
 
-.hospital-card {
-    background: #fff;
-    padding: 20px;
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.hospital-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    min-width: 800px;
+}
+
+.hospital-table th,
+.hospital-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.hospital-table th {
+    background-color: #005f73;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.hospital-table tr:hover {
+    background-color: #f5fcfc;
+}
+
+.hospital-table td a {
+    color: #0a9396;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.hospital-table td a:hover {
+    color: #005f73;
+}
+
+.text-muted {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* 小贴士部分 */
+.tips-section {
+    background-color: #fff;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    border-left: 5px solid #0a9396;
+    border-left: 5px solid #ee9b00;
+    margin-top: 40px;
 }
 
-.hospital-card h3 {
-    color: #005f73;
-    margin-bottom: 10px;
+.tips-section h3 {
+    color: #ee9b00;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.tips-list {
+    list-style: none;
+}
+
+.tips-list li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tips-list li::before {
+    content: "•";
+    color: #ee9b00;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.tips-list code {
+    background-color: #f1f1f1;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    color: #d63384;
 }
 
 /* 页脚 */
